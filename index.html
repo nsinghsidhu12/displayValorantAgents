@@ -6,15 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valorant Agents</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
-  <input id="agentInput" type="text">
-  <button id="agentSubmit">Submit</button>
+  <header id="headerContainer">
+    <h2 id="title">Valorant Agents</h2>
+    <div id="userInput">
+      <input id="agentInput" type="text">
+      <button id="agentSubmit">Submit</button>
+    </div>
+  </header>
 
-  <h2 id="agentName"></h2>
-  <img id="agentImage">
+  <section id="agentContainer">
+    <h2 id="agentName"></h2>
+    <img id="agentImage">
+    <div id="agentInfo">
+      <h3 id="agentRole"></h3>
+      <p id="agentRoleDesc"></p>
+      <p id="agentDesc"></p>
+    </div>
+  </section>
 
   <script src="displayui.js"></script>
   <script src="fetch.js"></script>

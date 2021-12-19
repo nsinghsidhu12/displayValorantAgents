@@ -1,0 +1,79 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+#headerContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#headerContainer #title {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#headerContainer #userInput {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#agentContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#agentContainer #agentName {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  font-size: 36pt;
+  margin: 0;
+}
+
+#agentContainer #agentImage {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  width: 100%;
+}
+
+#agentContainer #agentInfo {
+  height: 100%;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#agentContainer #agentRole {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin: 0;
+}
+
+#agentContainer #agentRoleDesc {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin: 0;
+}
+
+#agentContainer #agentDesc {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  margin: 0;
+}
+
+
+
+
+
