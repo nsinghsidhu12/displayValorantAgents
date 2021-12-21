@@ -2,12 +2,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: Helvetica;
+  background: #969cc2;
 }
 
 #headerContainer {
   height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
   justify-items: center;
   align-items: center;
 }
@@ -17,61 +19,225 @@ body {
   grid-row: 1 / span 1;
 }
 
-#headerContainer #userInput {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
+#userInput #agentInput {
+  padding: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid #000;
 }
 
-#agentContainer {
+#userInput #agentSubmit {
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ }
+
+#agentCard {
   height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 5fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#agentCard #agentContainer {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
   justify-items: center;
   align-items: center;
 }
 
 #agentContainer #agentName {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  font-size: 36pt;
-  margin: 0;
+}
+
+#agentContainer #userInput {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 #agentContainer #agentImage {
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 1;
   grid-row: 2 / span 1;
   width: 100%;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 #agentContainer #agentInfo {
-  height: 100%;
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: 2 / span 1;
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 
-#agentContainer #agentRole {
+#agentInfo #agentRoleImage {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  margin: 0;
+  width: 50%;
+  min-width: 50px;
 }
 
-#agentContainer #agentRoleDesc {
+#agentInfo #agentAbilOneImage {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
+  width: 50%;
+  min-width: 50px;
+}
+
+#agentInfo #agentAbilTwoImage {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  width: 50%;
+  min-width: 50px;
+}
+
+#agentInfo #agentAbilThreeImage {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  width: 50%;
+  min-width: 50px;
+}
+
+#agentInfo #agentUltImage {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  width: 50%;
+  min-width: 50px;
+}
+
+#agentInfo #agentAbilText {
+  grid-column: 1 / span 5;
+  grid-row: 2 / span 1;
+}
+
+#agentInfo #agentRole {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+
+#agentInfo #agentDesc {
+  grid-column: 1 / span 5;
+  grid-row: 4 / span 1;
+}
+
+.hover:hover {
+  background-color: #000000;
+}
+
+/* #allAgentNames {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#allAgentNames ul {
+  padding: 0;
   margin: 0;
 }
 
-#agentContainer #agentDesc {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 1;
-  margin: 0;
+#allAgentNames li {
+  text-decoration: none;
+  list-style: none;
+} */
+
+@media only screen and (max-width: 850px) {
+  #headerContainer {
+    grid-template-columns: 1fr;
+  }
+
+  #headerContainer #title {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  #headerContainer #title {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  #agentCard {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+  #agentCard #agentContainer {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: 1fr;
+  }
+
+  #agentContainer #agentName {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  #agentContainer #userInput {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin-bottom: 5%;
+  }
+  
+  #agentContainer #agentImage {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 50%;
+    min-width: 200px;
+  }
+
+  #agentContainer #agentInfo {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 5%;
+  }
+  
+  #agentInfo #agentRoleImage {
+    width: 50%;
+    min-width: 30px;
+  }
+  
+  #agentInfo #agentAbilOneImage {
+    width: 50%;
+    min-width: 30px;
+  }
+  
+  #agentInfo #agentAbilTwoImage {
+    width: 50%;
+    min-width: 30px;
+  }
+  
+  #agentInfo #agentAbilThreeImage {
+    width: 50%;
+    min-width: 30px;
+  }
+  
+  #agentInfo #agentUltImage {
+    width: 50%;
+    min-width: 30px;
+  }
+  
 }
+
+
+
+
+
 
 
 
