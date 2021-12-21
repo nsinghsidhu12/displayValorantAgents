@@ -12,21 +12,48 @@
 <body>
   <header id="headerContainer">
     <h2 id="title">Valorant Agents</h2>
-    <div id="userInput">
-      <input id="agentInput" type="text">
-      <button id="agentSubmit">Submit</button>
-    </div>
   </header>
 
-  <section id="agentContainer">
-    <h2 id="agentName"></h2>
-    <img id="agentImage">
-    <div id="agentInfo">
-      <h3 id="agentRole"></h3>
-      <p id="agentRoleDesc"></p>
-      <p id="agentDesc"></p>
+  <section id="agentCard">
+    <div id="agentContainer">
+      <h2 id="agentName"></h2>
+      <div id="userInput">
+        <input id="agentInput" type="text" placeholder="Enter an Agent">
+        <button id="agentSubmit">Submit</button>
+      </div>
+      <img id="agentImage">
+      <div id="agentInfo">
+        <img id="agentRoleImage" class="hover">
+        <img id="agentAbilOneImage" class="hover">
+        <img id="agentAbilTwoImage" class="hover">
+        <img id="agentAbilThreeImage" class="hover">
+        <img id="agentUltImage" class="hover">
+        <p id="agentAbilText"></p>
+        <h3 id="agentRole"></h3>
+        <p id="agentDesc"></p>
+      </div>
     </div>
   </section>
+
+  <!-- <section id="allAgentNames">
+    <ul>
+      <li>Astra</li>
+      <li>Breach</li>
+      <li>Brimstone</li>
+      <li>Chamber</li>
+      <li>Cypher</li>
+      <li>Jett</li>
+      <li>KAY/O</li>
+      <li>Killjoy</li>
+      <li>Raze</li>
+      <li>Reyna</li>
+      <li>Sage</li>
+      <li>Skye</li>
+      <li>Sova</li>
+      <li>Viper</li>
+      <li>Yoru</li>
+    </ul>
+  </section> -->
 
   <script src="displayui.js"></script>
   <script src="fetch.js"></script>
