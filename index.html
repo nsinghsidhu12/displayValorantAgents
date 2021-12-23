@@ -11,7 +11,7 @@
 
 <body>
   <header id="headerContainer">
-    <h2 id="title">Valorant Agents</h2>
+    <h1 id="title">Valorant Agents</h1>
   </header>
 
   <section id="agentCard">
@@ -23,40 +23,122 @@
       </div>
       <img id="agentImage">
       <div id="agentInfo">
-        <img id="agentRoleImage" class="hover">
-        <img id="agentAbilOneImage" class="hover">
-        <img id="agentAbilTwoImage" class="hover">
-        <img id="agentAbilThreeImage" class="hover">
-        <img id="agentUltImage" class="hover">
+        <div id="agentOne" class="hover">
+          <img id="agentRoleImage">
+          <h5 id="agentRole"></h5>
+        </div>
+        <div id="agentTwo" class="hover">
+          <img id="agentAbilOneImage">
+          <h5 id="abilOneText"></h5>
+        </div>
+        <div id="agentThree" class="hover">
+          <img id="agentAbilTwoImage">
+          <h5 id="abilTwoText"></h5>
+        </div>
+        <div id="agentFour" class="hover">
+          <img id="agentAbilThreeImage">
+          <h5 id="abilThreeText"></h5>
+        </div>
+        <div id="agentFive" class="hover">
+          <img id="agentUltImage">
+          <h5 id="ultText"></h5>
+        </div>
         <p id="agentAbilText"></p>
-        <h3 id="agentRole"></h3>
         <p id="agentDesc"></p>
       </div>
     </div>
   </section>
 
-  <!-- <section id="allAgentNames">
-    <ul>
-      <li>Astra</li>
-      <li>Breach</li>
-      <li>Brimstone</li>
-      <li>Chamber</li>
-      <li>Cypher</li>
-      <li>Jett</li>
-      <li>KAY/O</li>
-      <li>Killjoy</li>
-      <li>Raze</li>
-      <li>Reyna</li>
-      <li>Sage</li>
-      <li>Skye</li>
-      <li>Sova</li>
-      <li>Viper</li>
-      <li>Yoru</li>
-    </ul>
-  </section> -->
+  <section id="agentNamesTitle">
+    <h2 id="agentsHeader">Agents</h2>
+  </section>
+
+  <section id="agentsContainer">
+    <div id="allAgentNames">
+      <div id="namesOne">
+        <div id="astra" class="hover">
+          <img src="imgs/Astra_icon.png">
+          <h2 id="astraText" class="fontSmall">Astra</h2>
+        </div>
+        <div id="breach" class="hover">
+          <img src="imgs/Breach_icon.png">
+          <h2 id="breachText" class="fontSmall">Breach</h2>
+        </div>
+        <div id="brimstone" class="hover">
+          <img src="imgs/brimstone_icon.png">
+          <h2 id="brimstoneText" class="fontSmall">Brimstone</h2>
+        </div>
+        <div id="chamber" class="hover">
+          <img src="imgs/chamber_icon.png">
+          <h2 id="chamberText" class="fontSmall">Chamber</h2>
+        </div>
+        <div id="cypher" class="hover">
+          <img src="imgs/cypher_icon.png">
+          <h2 id="cypherText" class="fontSmall">Cypher</h2>
+        </div>
+        <div id="jett" class="hover">
+          <img src="imgs/jett_icon.png">
+          <h2 id="jettText" class="fontSmall">Jett</h2>
+        </div>
+      </div>
+      <div id="namesTwo">
+        <div id="kayo" class="hover">
+          <img src="imgs/kayo_icon.png">
+          <h2 id="kayoText" class="fontSmall">Kay/o</h2>
+        </div>
+        <div id="killjoy" class="hover">
+          <img src="imgs/killjoy_icon.png">
+          <h2 id="killjoyText" class="fontSmall">Killjoy</h2>
+        </div>
+        <div id="omen" class="hover">
+          <img src="imgs/omen_icon.png">
+          <h2 id="omenText" class="fontSmall">Omen</h2>
+        </div>
+        <div id="phoenix" class="hover">
+          <img src="imgs/phoenix_icon.png">
+          <h2 id="phoenixText" class="fontSmall">Phoenix</h2>
+        </div>
+        <div id="raze" class="hover">
+          <img src="imgs/raze_icon.png">
+          <h2 id="razeText" class="fontSmall">Raze</h2>
+        </div>
+      </div>
+      <div id="namesThree">
+        <div id="reyna" class="hover">
+          <img src="imgs/reyna_icon.png">
+          <h2 id="reynaText" class="fontSmall">Reyna</h2>
+        </div>
+        <div id="sage" class="hover">
+          <img src="imgs/sage_icon.png">
+          <h2 id="sageText" class="fontSmall">Sage</h2>
+        </div>
+        <div id="skye" class="hover">
+          <img src="imgs/skye_icon.png">
+          <h2 id="skyeText" class="fontSmall">Skye</h2>
+        </div>
+        <div id="sova" class="hover">
+          <img src="imgs/sova_icon.png">
+          <h2 id="sovaText" class="fontSmall">Sova</h2>
+        </div>
+        <div id="viper" class="hover">
+          <img src="imgs/viper_icon.png">
+          <h2 id="viperText" class="fontSmall">Viper</h2>
+        </div>
+        <div id="yoru" class="hover">
+          <img src="imgs/yoru_icon.png">
+          <h2 id="yoruText" class="fontSmall">Yoru</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <h2>Footer</h2>
+  </footer>
 
   <script src="displayui.js"></script>
   <script src="fetch.js"></script>
+  <script src="agents.js"></script>
   <script src="uuid.js"></script>
 </body>
 
