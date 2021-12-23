@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valorant Agents</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/imgs/icon.png" sizes="16x16 32x32">
 </head>
 
 <body>
@@ -14,13 +15,15 @@
     <h1 id="title">Valorant Agents</h1>
   </header>
 
+  <div id="userInput">
+    <input id="agentInput" type="text" placeholder="Enter an agent name" required>
+    <button id="agentSubmit" class="hover">Submit</button>
+    <h4 id="errorMessage"></h4>
+  </div>
+
   <section id="agentCard">
     <div id="agentContainer">
       <h2 id="agentName"></h2>
-      <div id="userInput">
-        <input id="agentInput" type="text" placeholder="Enter an Agent">
-        <button id="agentSubmit">Submit</button>
-      </div>
       <img id="agentImage">
       <div id="agentInfo">
         <div id="agentOne" class="hover">
@@ -50,7 +53,7 @@
   </section>
 
   <section id="agentNamesTitle">
-    <h2 id="agentsHeader">Agents</h2>
+    <h1 id="agentsHeader">Agents</h1>
   </section>
 
   <section id="agentsContainer">

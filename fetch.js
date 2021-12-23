@@ -1,7 +1,8 @@
 const display = new DisplayUI();
 
+// Specific agent data specified by the UUID
 class Fetch {
-  async getAgent(uuid) {
+  async GetAgent(uuid) {
     const url = `https://valorant-api.com/v1/agents/${uuid}`;
     const response = await fetch(url);
     const data = await response.json();
@@ -9,7 +10,8 @@ class Fetch {
     display.AgentData(agent);
   }
 
-  async getAllAgents() {
+// All agent data
+  async GetAllAgents() {
     const url = "https://valorant-api.com/v1/agents";
     const response = await fetch(url);
     const data = await response.json();

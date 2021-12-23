@@ -14,22 +14,23 @@ const agentRole = document.querySelector("#agentRole");
 const agentDesc = document.querySelector("#agentDesc");
 const agentContainer = document.querySelector("#agentContainer");
 
+// Displays the agent info
 class DisplayUI {
   AgentData(agent) {
-    agentName.innerHTML = `${agent.displayName}`;
-    agentImage.src = `${agent.bustPortrait}`;
-    agentRoleImage.src = `${agent.role.displayIcon}`;
-    agentAbilOneImage.src = `${agent.abilities[0].displayIcon}`;
-    abilOneText.innerHTML = `${agent.abilities[0].displayName}`;
-    agentAbilTwoImage.src = `${agent.abilities[1].displayIcon}`;
-    abilTwoText.innerHTML = `${agent.abilities[1].displayName}`;
-    agentAbilThreeImage.src = `${agent.abilities[2].displayIcon}`;
-    abilThreeText.innerHTML = `${agent.abilities[2].displayName}`;
-    agentUltImage.src = `${agent.abilities[3].displayIcon}`;
-    ultText.innerHTML = `${agent.abilities[3].displayName}`;
-    agentAbilText.innerHTML = `${agent.role.description}`;
-    agentRole.innerHTML = `${agent.role.displayName}`
-    agentDesc.innerHTML = `${agent.description}`;
+    agentName.textContent = agent.displayName;
+    agentImage.src = agent.bustPortrait;
+    agentRoleImage.src = agent.role.displayIcon;
+    agentAbilOneImage.src = agent.abilities[0].displayIcon;
+    abilOneText.textContent = agent.abilities[0].displayName;
+    agentAbilTwoImage.src = agent.abilities[1].displayIcon;
+    abilTwoText.textContent = agent.abilities[1].displayName;
+    agentAbilThreeImage.src = agent.abilities[2].displayIcon;
+    abilThreeText.textContent = agent.abilities[2].displayName;
+    agentUltImage.src = agent.abilities[3].displayIcon;
+    ultText.textContent = agent.abilities[3].displayName;
+    agentAbilText.textContent = agent.role.description;
+    agentRole.textContent = agent.role.displayName;
+    agentDesc.textContent = agent.description;
     this.AbilityClickEvents(agent);
     this.AgentBG(agent);
   }
@@ -100,31 +101,31 @@ class DisplayUI {
 
   Desc(agent) {
     agentRoleImage.addEventListener("click", () => {
-      agentAbilText.innerHTML = `${agent.description}`;
+      agentAbilText.textContent = agent.description;
     })
   }
 
   AbilOne(agent) {
     agentAbilOneImage.addEventListener("click", () => {
-      agentAbilText.innerHTML = `${agent.abilities[0].description}`;
+      agentAbilText.textContent = agent.abilities[0].description;
     })
   }
 
   AbilTwo(agent) {
     agentAbilTwoImage.addEventListener("click", () => {
-      agentAbilText.innerHTML = `${agent.abilities[1].description}`;
+      agentAbilText.textContent = agent.abilities[1].description;
     })
   }
 
   AbilThree(agent) {
     agentAbilThreeImage.addEventListener("click", () => {
-      agentAbilText.innerHTML = `${agent.abilities[2].description}`;
+      agentAbilText.textContent = agent.abilities[2].description;
     })
   }
 
   AbilUlt(agent) {
     agentUltImage.addEventListener("click", () => {
-      agentAbilText.innerHTML = `${agent.abilities[3].description}`;
+      agentAbilText.textContent = agent.abilities[3].description;
     })
   }
 

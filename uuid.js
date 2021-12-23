@@ -18,6 +18,7 @@ class UUID {
     this.InputSubmit(this.FilterAgents(agents));
   }
 
+  // When submit is clicked on, if the input value matches the name of an agent, uuid of that agent is sent as a parameter
   InputSubmit(newAgents) {
     let err = true;
     agentSubmit.addEventListener("click", () => {
@@ -37,12 +38,14 @@ class UUID {
     })
   }
 
+  // Removes the error message when the input is clicked on
   InputClick() {
     agentInput.addEventListener("click", () => {
       errorMessage.textContent = "";
     })
   }
 
+  // Filter the array from the API to return a new array without the object which has the specified UUID
   FilterAgents(agents) {
     return agents.filter(agent => agent.uuid != "ded3520f-4264-bfed-162d-b080e2abccf9");
   }
