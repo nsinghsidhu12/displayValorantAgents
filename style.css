@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Helvetica;
-  background: #969cc2;
+  background: linear-gradient(#e7e7e7, #6d6d6d);
 }
 
 #headerContainer {
@@ -19,19 +19,27 @@ body {
   grid-row: 1 / span 1;
 }
 
-#userInput #agentInput {
-  padding: 5px 0px;
-  border-radius: 5px;
-  border: 1px solid #000;
+#footer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#footer h2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+/* #userInput #agentInput {
+
 }
 
 #userInput #agentSubmit {
-  border: none;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
- }
+
+} */
 
 #agentCard {
   height: 100%;
@@ -51,6 +59,8 @@ body {
   grid-template-columns: 3fr 4fr;
   justify-items: center;
   align-items: center;
+  background: linear-gradient(#c95d55, #63302b);
+  border-radius: 10px;
 }
 
 #agentContainer #agentName {
@@ -83,37 +93,52 @@ body {
   text-align: center;
 }
 
-#agentInfo #agentRoleImage {
+#agentInfo #agentOne {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
+}
+
+#agentInfo #agentRoleImage {
   width: 50%;
   min-width: 50px;
+}
+
+#agentInfo #agentTwo {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
 }
 
 #agentInfo #agentAbilOneImage {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
   width: 50%;
   min-width: 50px;
+}
+
+#agentInfo #agentThree {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
 }
 
 #agentInfo #agentAbilTwoImage {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
   width: 50%;
   min-width: 50px;
+}
+
+#agentInfo #agentFour{
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
 }
 
 #agentInfo #agentAbilThreeImage {
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 1;
   width: 50%;
   min-width: 50px;
 }
 
-#agentInfo #agentUltImage {
+#agentInfo #agentFive {
   grid-column: 5 / span 1;
   grid-row: 1 / span 1;
+}
+
+#agentInfo #agentUltImage {
   width: 50%;
   min-width: 50px;
 }
@@ -123,21 +148,67 @@ body {
   grid-row: 2 / span 1;
 }
 
-#agentInfo #agentRole {
-  grid-column: 3 / span 1;
+#agentInfo #agentDesc {
+  grid-column: 1 / span 5;
   grid-row: 3 / span 1;
 }
 
-#agentInfo #agentDesc {
-  grid-column: 1 / span 5;
-  grid-row: 4 / span 1;
+#agentNamesTitle {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
-.hover:hover {
-  background-color: #000000;
+#agentNamesTitle #agentsHeader {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
 }
 
-/* #allAgentNames {
+#agentsContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#agentsContainer #allAgentNames {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  /* background: linear-gradient(#c95d55, #63302b); */
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+#allAgentNames #namesOne {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#namesOne #astra {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
   height: 100%;
   width: 100%;
   display: grid;
@@ -147,17 +218,562 @@ body {
   text-align: center;
 }
 
-#allAgentNames ul {
-  padding: 0;
-  margin: 0;
+#astra img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
 }
 
-#allAgentNames li {
-  text-decoration: none;
-  list-style: none;
-} */
+#namesOne #breach {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
 
-@media only screen and (max-width: 850px) {
+#breach img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesOne #brimstone {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#brimstone img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesOne #chamber {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#chamber img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesOne #cypher {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#cypher img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesOne #jett {
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#jett img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#allAgentNames #namesTwo {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#namesTwo #kayo {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#kayo img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 33%;
+}
+
+#namesTwo #killjoy {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#killjoy img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 33%;
+}
+
+#namesTwo #omen {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#omen img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 33%;
+}
+
+#namesTwo #phoenix {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#phoenix img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 33%;
+}
+
+#namesTwo #raze {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#raze img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 33%;
+}
+
+#allAgentNames #namesThree {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#namesThree #reyna {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#reyna img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesThree #sage {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#sage img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesThree #skye {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#skye img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesThree #sova {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#sova img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesThree #viper {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#viper img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+#namesThree #yoru {
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#yoru img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  width: 40%;
+}
+
+img, div { 
+	transition: all .2s ease-in-out; 
+} 
+
+.hover:hover {
+  transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 1000px) {
+  #agentsContainer {
+    grid-template-columns: 1fr 24fr 1fr;
+  }
+
+  #agentsContainer #allAgentNames {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  #allAgentNames #namesOne {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: 1fr;
+  }
+
+  #namesOne #astra {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  
+  #astra img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesOne #breach {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #breach img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesOne #brimstone {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #brimstone img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesOne #chamber {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #chamber img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesOne #cypher {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #cypher img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesOne #jett {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #jett img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+
+  #allAgentNames #namesTwo {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #namesTwo #kayo {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #kayo img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesTwo #killjoy {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #killjoy img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesTwo #omen {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #omen img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesTwo #phoenix {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #phoenix img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesTwo #raze {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #raze img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #allAgentNames #namesThree {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: 1fr;
+  }
+
+  #namesThree #reyna {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #reyna img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesThree #sage {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #sage img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesThree #skye {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #skye img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesThree #sova {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #sova img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesThree #viper {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #viper img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+  
+  #namesThree #yoru {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    grid-template-columns: 1fr;
+  }
+  
+  #yoru img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 30%;
+  }
+
   #headerContainer {
     grid-template-columns: 1fr;
   }
@@ -173,7 +789,7 @@ body {
   }
 
   #agentCard {
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 12fr 1fr;
   }
 
   #agentCard #agentContainer {
@@ -191,18 +807,19 @@ body {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     margin-bottom: 5%;
+    margin-top: 5%;
   }
   
   #agentContainer #agentImage {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
     width: 50%;
     min-width: 200px;
   }
 
   #agentContainer #agentInfo {
     grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-top: 5%;
   }
@@ -231,8 +848,85 @@ body {
     width: 50%;
     min-width: 30px;
   }
-  
 }
+
+  @media only screen and (max-width: 650px) {
+    #agentContainer #agentInfo {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #agentInfo #agentOne {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+    }
+
+    #agentInfo #agentRoleImage {
+      width: 25%;
+      max-width: 40px;
+    }
+
+    #agentInfo #agentTwo {
+      grid-column: 2 / span 3;
+      grid-row: 1 / span 1;
+    }
+
+    #agentInfo #agentAbilOneImage {
+      width: 25%;
+      max-width: 40px;
+    }
+
+    #agentInfo #agentThree {
+      grid-column: 4 / span 2;
+      grid-row: 1 / span 1;
+    }
+
+    #agentInfo #agentAbilTwoImage {
+      width: 25%;
+      max-width: 40px;
+    }
+
+    #agentInfo #agentFour {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+    }
+
+    #agentInfo #agentAbilThreeImage {
+      width: 25%;
+      max-width: 40px;
+    }
+
+    #agentInfo #agentFive {
+      grid-column: 4 / span 2;
+      grid-row: 2 / span 1;
+    }
+
+    #agentInfo #agentUltImage {
+      width: 25%;
+      max-width: 40px;
+    }
+
+    #agentInfo #agentAbilText {
+      grid-column: 1 / span 5;
+      grid-row: 3 / span 1;
+    }
+
+    #agentInfo #agentDesc {
+      grid-column: 1 / span 5;
+      grid-row: 5 / span 1;
+    }
+
+    .fontSmall {
+      font-size: 14px;
+    }
+  }
+
+
+
+
+
+  
+  
+
 
 
 
