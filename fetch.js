@@ -7,7 +7,6 @@ class Fetch {
     const data = await response.json();
     const agent = data.data;
     display.AgentData(agent);
-    
   }
 
   async getAllAgents() {
@@ -17,5 +16,4 @@ class Fetch {
     const agents = data.data;
     return agents;
   }
-
 }
