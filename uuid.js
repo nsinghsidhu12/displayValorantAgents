@@ -1,4 +1,7 @@
 const ft = new Fetch();
+let err = false;
+const errorMessage = document.querySelector("#errorMessage");
+
 let defaultUUID = "41fb69c1-4189-7b37-f117-bcaf1e96f1bf";
 
 if (localStorage.getItem("agent") != null) {
@@ -7,8 +10,6 @@ if (localStorage.getItem("agent") != null) {
 
 const agentInput = document.querySelector("#agentInput");
 const agentSubmit = document.querySelector("#agentSubmit");
-
-localStorage.getItem("agent");
 
 class UUID {
   async getAgentUUID() {
